@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion 24
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        applicationId "me.sabareesh.trippie"
+        minSdkVersion 16
+        targetSdkVersion 24
+        versionCode 1_200_000
+        versionName "1.2"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            applicationIdSuffix ".debug"
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+
+    //networking
+    compile files('libs/volley.jar')
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    //Google services
+    compile 'com.google.android.gms:play-services-location:9.6.0'
+    compile 'com.google.android.gms:play-services-ads:9.6.0'
+    compile 'com.google.android.gms:play-services-places:9.6.0'
+    //UI
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:cardview-v7:24.2.1'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.android.support:support-v4:24.2.1'
+    compile 'com.android.support:support-vector-drawable:24.2.1'
+
+    //firebase
+    compile 'com.google.firebase:firebase-database:9.6.0'
+    compile 'com.google.firebase:firebase-auth:9.6.0'
+    compile 'com.firebaseui:firebase-ui-auth:0.6.0'
+    compile 'com.google.firebase:firebase-messaging:9.6.0'
+}
+
+
+
+apply plugin: 'com.google.gms.google-services'

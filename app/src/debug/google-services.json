@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "811949295210",
+    "firebase_url": "https://vntrip1-417ed.firebaseio.com",
+    "project_id": "vntrip1-417ed",
+    "storage_bucket": "vntrip1-417ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:811949295210:android:1d4e71fab9a8a67b",
+        "android_client_info": {
+          "package_name": "me.sabareesh.trippie.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "811949295210-8tf98e93ss9gs4kv5c07gq8a4coiikos.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCn_a0tWCP3hL402ZQ-li0HljYm9E7BOZU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
